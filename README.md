@@ -7,7 +7,7 @@ WrkMan is a platform that connects skilled artisans with customers who need thei
 WrkerMan acts as a digital bridge between artisans and customers. Users can browse by category, view their ratings,chat directly and book services accurately
 
    ## Why It Matters
-Finding a dependable artisaan often means asking five friends or taking a risk on a stranger. WrkMan replaces guessork with clarity and trust. Users can see direct chat,verified profiles and honest reviews.
+Finding a dependable artisan often means asking five friends or taking a risk on a stranger. WrkerMan replaces guessork with clarity and trust. Users can see direct chat,verified profiles and honest reviews.
 
    ## Who It's For
 **Customers**: Individuals or businesses seeking skilled artisans for services or project.
@@ -35,9 +35,12 @@ Notifications	Firebase Cloud Messaging
 Storage	Cloudinary
 Maps	Google Maps API
 
-   ## MVP Focus
-Build fast,simple and solid.
-Key goals: signup, artisan listing,booking, chat and reviews.
+   ## How Wrkman Works
+1. Sign Up: Customers and artisans create accounts and set up profiles.Authentication is handled securely using email/phone verification
+2. Find & Connect: Customers use Smart Search to discover nearby artisans and chat with them before booking.
+3. Book & Pay: Once details are agreed, customers book services and make secure payments via Stripe or Paystack.
+4.Get the Job Done: The artisan completes the task and both users receive real-time notifications for updates.
+5.Rate & Review: Customers leave ratings and feedback, helping others choose trusted artisans.Build fast,simple and solid.
 
 
 

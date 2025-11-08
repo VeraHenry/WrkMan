@@ -14,20 +14,29 @@ Finding a dependable artisan often means asking five friends or taking a risk on
 
 **Artisans**: Skilled professionals such as carpenters, electricians, painters and creatives looking to expand their client base.
 
-**Communities** Looking to digitize informal labor markets
+**Communities**: Looking to digitize informal labor markets
+
 
    ## Core Features
+
+Onboarding (sign up/sign in)
+
 Artisan Profiles (skills,ratings,prices and experience)
 
 Smart Search- find artisans near you
 
 Chat system- communicate before booking
 
-Ratings and Reviews- ensure quality
+Ratings and Reviews
 
-Notifications-stay updated on jobs
+Customer support
 
-Secure Payments- stay updated on jobs
+In app market place
+
+Notifications
+
+Secure Payments integrationn
+
 
    ## Tech Stack
 Frontend	React Native, Redux, Expo
@@ -52,6 +61,7 @@ Storage	Cloudinary
 
 Maps	Google Maps API
 
+
    ## How Wrkman Works
 1. Sign Up: Customers and artisans create accounts and set up profiles.Authentication is handled securely using email/phone verification
 
@@ -61,8 +71,7 @@ Maps	Google Maps API
 
 4. Get the Job Done: The artisan completes the task and both users receive real-time notifications for updates.
 
-5. Rate & Review: Customers leave ratings and feedback, helping others choose trusted artisans.Build fast,simple and solid.
-
+5. Rate & Review: Customers leave ratings and feedback, helping others choose trusted artisans.
 
 
 

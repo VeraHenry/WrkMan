@@ -56,10 +56,10 @@ Maps	Google Maps API
 2. Find & Connect: Customers use Smart Search to discover nearby artisans and chat with them before booking.
 
 3. Book & Pay: Once details are agreed, customers book services and make secure payments via Stripe or Paystack.
-   
-4.Get the Job Done: The artisan completes the task and both users receive real-time notifications for updates.
 
-5.Rate & Review: Customers leave ratings and feedback, helping others choose trusted artisans.Build fast,simple and solid.
+4. Get the Job Done: The artisan completes the task and both users receive real-time notifications for updates.
+
+5. Rate & Review: Customers leave ratings and feedback, helping others choose trusted artisans.Build fast,simple and solid.
 
 
 

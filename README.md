@@ -11,7 +11,9 @@ Finding a dependable artisan often means asking five friends or taking a risk on
 
    ## Who It's For
 **Customers**: Individuals or businesses seeking skilled artisans for services or project.
+
 **Artisans**: Skilled professionals such as carpenters, electricians, painters and creatives looking to expand their client base.
+
 **Communities** Looking to digitize informal labor markets
 
    ## Core Features

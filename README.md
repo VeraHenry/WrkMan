@@ -16,10 +16,15 @@ Finding a dependable artisan often means asking five friends or taking a risk on
 
    ## Core Features
 Artisan Profiles (skills,ratings,prices and experience)
+
 Smart Search- find artisans near you
+
 Chat system- communicate before booking
+
 Ratings and Reviews- ensure quality
+
 Notifications-stay updated on jobs
+
 Secure Payments- stay updated on jobs
 
    ## Tech Stack
@@ -48,8 +53,8 @@ Maps	Google Maps API
    ## How Wrkman Works
 1. Sign Up: Customers and artisans create accounts and set up profiles.Authentication is handled securely using email/phone verification
 
-2.  Find & Connect: Customers use Smart Search to discover nearby artisans and chat with them before booking.
-   
+2. Find & Connect: Customers use Smart Search to discover nearby artisans and chat with them before booking.
+
 3. Book & Pay: Once details are agreed, customers book services and make secure payments via Stripe or Paystack.
    
 4.Get the Job Done: The artisan completes the task and both users receive real-time notifications for updates.

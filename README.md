@@ -7,7 +7,7 @@ WrkMan is a platform that connects skilled artisans with customers who need thei
 WrkMan acts as a digital bridge between artisans and customers. Users can browse by category, view their ratings,chat directly and book services accurately
 
    ## Why It Matters
-Finding a dependable artisan often means asking five friends or taking a risk on a stranger. WrkerMan replaces guessork with clarity and trust. Users can see direct chat,verified profiles and honest reviews.
+Finding a dependable artisan often means asking five friends or taking a risk on a stranger. WrkMan replaces guessork with clarity and trust. Users can see direct chat,verified profiles and honest reviews.
 
    ## Who It's For
 **Customers**: Individuals or businesses seeking skilled artisans for services or project.

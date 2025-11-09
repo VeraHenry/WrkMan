@@ -113,9 +113,9 @@ Payment Integrations:
 
  ## Technical Feasibility
 
-1. Safe and Smart: Your data belongs to you. Chats, bookings, and payments are secure and encrypted. Users have full control—profiles, job history, and reviews can be managed or deleted in a tap.
+1. Safe and Smart: Your data belongs to you. Chats, bookings, and payments are secure and encrypted. Users have full control profiles, job history, and reviews can be managed or deleted in a tap.
 
-2. Lightning-Fast Experience: Finding the right artisan, sending a message, or completing a booking happens instantly. Real-time notifications keep everyone in sync, so jobs never get delayed.
+2. Lightning-Fast Experience: Finding the right artisan, sending a message, or completing a booking happens instantly. Real time notifications keep everyone in sync, so jobs never get delayed.
 
 3. Simple to Build, Easy to Grow: With a single React Native codebase for iOS and Android, updates are fast and predictable. The backend focuses on what matters most: matching users with artisans, handling payments, and keeping the experience seamless.
 

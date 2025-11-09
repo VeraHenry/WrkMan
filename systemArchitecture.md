@@ -29,7 +29,7 @@ This file explains how each technical layer interacts to bring that experience t
   
 •	Artisan search & smart matching
  
-•	Job booking, chat, and notifications
+•	Job booking, chat and notifications
  
 •	Ratings & reviews management
  

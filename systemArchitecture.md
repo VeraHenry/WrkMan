@@ -5,22 +5,94 @@ WrkMan is a service platform connecting artisans to customers in real time.
 This file explains how each technical layer interacts to bring that experience to life.
 
 ## Core Stack
- Component | Technology | Purpose |
- *Frontend* | React (web) / React Native (mobile) | User interface for browsing and booking |
- *Backend* | Node.js + Express | API logic, authentication, and booking flow |
- *Database* | PostgreSQL | Central data hub (users, bookings, reviews) |
- *Storage* | Cloudinary / AWS S3 | Media uploads (photos, certificates) |
- *Auth* | JWT or Firebase | Secure login for artisans and customers |
- *Notifications* | Firebase Cloud Messaging | Real-time alerts |
- *Hosting* | Vercel (frontend), Render/Heroku (backend) | CI/CD deployment from GitHub |
+## Frontend (Mobile & Web)
+
+•	Framework: React Native (mobile), React.js (web)
+
+•	Language: TypeScript
+ 
+•	Navigation & UI: React Navigation, custom components
+ 
+•	State Management & Data Fetching: @tanstack/react-query
+ 
+•	Authentication & User Management: Firebase Authentication
+ 
+•	Notifications & Analytics: Firebase Cloud Messaging, Firebase Analytics
+
+## Backend (API & Integration Layer)
+
+•	Runtime & Framework: Node.js v20 + Express.js
+ 
+•	Deployment: Vercel Serverless Functions
+ 
+## **Core Responsibilities:
+  
+•	Artisan search & smart matching
+ 
+•	Job booking, chat, and notifications
+ 
+•	Ratings & reviews management
+ 
+•	Secure payments integration
+
+•	Authentication, rate limiting, analytics logging
+ 
+•	Libraries & SDKs: firebase-admin, axios, express-rate-limit, Stripe SDKGitHub |
 
 ## Database Model (Simplified)
-*Users* - id, name, email, phone, password, role (artisan/customer), rating, location
-*Services* - id, name, category, description, price_range
-*Bookings* - id, customer_id, artisan_id, service_id, date, status, payment_status
-*Chats* - id, booking_id, sender_id, message, timestamp
-*Reviews* - id, booking_id, rating, comment
 
+Authentication:
+
+•	Firebase Authentication (manages user and artisan accounts securely)
+
+Database:
+
+•	Firebase Firestore
+
+•	Stores user profiles, artisan profiles, bookings, reviews, and events
+ 
+•	Real-time updates for chat, job status, and ratings
+
+File Storage:
+
+•	Firebase Storage
+
+•	Stores profile pictures, job images, and other media
+
+CI/CD & Builds:
+
+•	GitHub Actions – automates linting, testing, and deployment
+ 
+•	Expo EAS Build – builds mobile apps for Android and iOS
+
+Payment Integrations:
+
+•	Stripe / Paystack – for payment records
+
+## How Component Communicate
+
+1.  User opens WrkMan app and logs in or browses as a guest.
+
+	2.	The app displays a smart search interface where the user can look for artisans based on skill, location, price, or rating.
+    
+	3.	When the user selects an artisan, the app fetches the artisan’s profile from the backend, including ratings, experience, and pricing.
+    
+	4.	If the user wants to chat or book a job, the app sends a request to the backend using a secure API call.
+    
+	5.	The backend (Node.js + Express) handles the request, updating the job status, sending notifications, and storing chat messages in the database.
+    
+	6.	Notifications are pushed to both the user and the artisan via Firebase Cloud Messaging to keep them updated on booking status, messages, or job changes.
+     
+	7.	Payments are processed securely via an integrated payment gateway (e.g., Stripe or Paystack), and payment confirmations are sent back to the app
+     
+	8.	If the user leaves a review, the rating and review are stored in Firebase Firestore and reflected in the artisan’s profile for future users.
+
+  
+  ## Architecture Flow
+   
+ <img width="275" height="701" alt="Capture 5" src="https://github.com/user-attachments/assets/c356c6b6-4e5c-4dbe-8627-5320e47e00cb" />
+
+	
 ## Communication Flow
 1. The *frontend* sends HTTPS requests to the *backend API*.  
 2. The *backend* talks to *PostgreSQL* using an ORM like Prisma.  
@@ -34,11 +106,3 @@ This file explains how each technical layer interacts to bring that experience t
 - Role-level permissions  
 - Input validation on all requests  
 
-## Mermaid Architecture Diagram
-mermaid
-flowchart LR
-  User[Client App]:|API Calls| Backend[(Node.js)]
-  Backend >|SQL| DB[(PostgreSQL)]
-  Backend >|Uploads| Storage[(Cloudinary/S3)]
-  Backend >|Notifications| Firebase[(FCM)]
-  User: Chat| WebSocket[(Realtime Chat Server)]
